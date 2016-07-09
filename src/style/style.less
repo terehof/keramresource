@@ -1,0 +1,261 @@
+@import "variables";
+@import "reset";
+@import "helpers";
+@import "fonts";
+@import "popups";
+
+html {
+    background: @white;
+    font-size: 10px;
+}
+body {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color: #2c2c2c;
+}
+
+.main-wrapper {
+    padding: 0 0 55px;
+}
+header {
+    padding: 1.4rem 0 1.1rem;
+}
+.container {
+    max-width: 97.8rem;
+    margin: auto;
+}
+.main-logo {
+    display: inline-block;
+    width: 13.5rem;
+    text-decoration: none;
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+.main-tagline {
+    display: inline-block;
+    vertical-align: top;
+    margin: 1.9rem 0 0 3.2rem;
+    font-size: 2rem;
+    color: #2c2c2c;
+    font-weight: 300;
+}
+.lang-switch {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    margin: 2.3rem 0 0;
+    color: #a1a1a1;
+    font-size: 1.2rem;
+    a {
+        color: #a1a1a1;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+        &.active {
+            color: #0ca2f3;
+            text-decoration: none;
+        }
+    }
+}
+nav {
+    position: relative;
+    z-index: 1;
+    ul {
+        max-width: 97.8rem;
+        margin: auto;
+        border-bottom-left-radius: .9rem;
+        border-bottom-right-radius: .9rem;
+        text-align: center;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dd6061+0,b22527+100 */
+        background: rgb(221,96,97); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(221,96,97,1) 0%, rgba(178,37,39,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(221,96,97,1) 0%,rgba(178,37,39,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(221,96,97,1) 0%,rgba(178,37,39,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd6061', endColorstr='#b22527',GradientType=0 ); /* IE6-9 */
+        li {
+            display: inline-block;
+            list-style: none;
+            a {
+                display: block;
+                line-height: 4.2rem;
+                padding: 0 3rem;
+                text-decoration: none;
+                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dd6061+0,b22527+100 */
+                background: rgb(221,96,97); /* Old browsers */
+                background: -moz-linear-gradient(top,  rgba(221,96,97,1) 0%, rgba(178,37,39,1) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top,  rgba(221,96,97,1) 0%,rgba(178,37,39,1) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom,  rgba(221,96,97,1) 0%,rgba(178,37,39,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd6061', endColorstr='#b22527',GradientType=0 ); /* IE6-9 */
+                color: #fff;
+                font-size: 1.6rem;
+                transition: all .2s ease;
+                font-weight: 300;
+                &:hover {
+                    background: #c32322;
+                    box-shadow: inset 0 0 .3rem #b82221;
+                }
+            }
+        }
+    }
+}
+
+.main-slider-wrap {
+    margin-top: -4.2rem;
+    text-align: center;
+    img {
+        max-width: 100%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+footer {
+    font-size: 1.3rem;
+    .container {
+        border-top: 2px solid #dedede;
+        padding: 16px 0 22px;
+    }
+    p {
+        margin: .75rem 0;
+    }
+    .copyright {
+
+    }
+    .made-by {
+        a {
+            text-decoration: none;
+            color: #0ca2f3;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.footer-left {
+    display: inline-block;
+}
+.footer-right {
+    display: inline-block;
+    float: right;
+}
+.footer-menu {
+    li {
+        display: inline-block;
+        position: relative;
+        &:before {
+            display: inline-block;
+            content: '';
+            width: .3rem;
+            height: .3rem;
+            background: #a1a1a1;
+            border-radius: 50%;
+            vertical-align: top;
+            margin: .5rem .5rem 0 .3rem;
+        }
+        &:first-child {
+            &:before {
+                display: none;
+            }
+        }
+        a {
+            color: #a1a1a1;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.footer-contacts {
+    color: #000;
+    p {
+        margin: .35rem 0;
+    }
+    a {
+        text-decoration: none;
+        color: #000;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.main-page-content {
+    padding: 2.3rem 0 0;
+    font-size: 1.4rem;
+    h1 {
+        text-transform: uppercase;
+        font-size: 2rem;
+        margin: 0 0 1.5rem;
+    }
+    p {
+        margin: 1rem 0;
+    }
+}
+.about-company {
+    display: inline-block;
+    float: left;
+    width: 66.46%;
+    text-align: justify;
+    line-height: 1.4;
+}
+.news-sidebar {
+    display: inline-block;
+    float: right;
+    width: 31.8%;
+    line-height: 1.4;
+    &__title {
+        text-transform: uppercase;
+        font-size: 2rem;
+        margin: 0 0 0.9rem;
+    }
+}
+.news-block {
+    border: 1px solid #dedede;
+    padding: .8rem 1.2rem;
+}
+.news-item {
+    display: block;
+    text-decoration: none;
+    margin: 0 0 1.5rem;
+    time {
+        display: block;
+        color: #a1a1a1;
+        text-decoration: none;
+        margin: 0 0 0.7rem;
+    }
+    &__text {
+        color: #0ca2f3;
+        text-decoration: underline;
+        transition: all .2s ease;
+    }
+    &:hover {
+        .news-item__text {
+            text-decoration: none;
+        }
+    }
+}
+.all-news {
+    display: block;
+    color: #0ca2f3;
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
