@@ -64,6 +64,8 @@ nav {
     position: relative;
     z-index: 1;
     ul {
+        position: relative;
+        z-index: 1;
         max-width: 97.8rem;
         margin: auto;
         border-bottom-left-radius: .9rem;
@@ -100,6 +102,17 @@ nav {
             }
         }
     }
+}
+.nav-decor {
+    content: '';
+    position: relative;
+    margin-top: -4.2rem;
+    z-index: 0;
+    height: 8.4rem;
+    width: 100%;
+    display: block;
+    background: url("../images/nav-decor.jpg") no-repeat center center;
+    background-size: cover;
 }
 
 .main-slider-wrap {
@@ -218,7 +231,7 @@ footer {
     border: 1px solid #dedede;
     padding: .8rem 1.2rem;
 }
-.news-item {
+.sidebar-news-item {
     display: block;
     text-decoration: none;
     margin: 0 0 1.5rem;
@@ -234,7 +247,7 @@ footer {
         transition: all .2s ease;
     }
     &:hover {
-        .news-item__text {
+        .sidebar-news-item__text {
             text-decoration: none;
         }
     }
@@ -245,6 +258,65 @@ footer {
     text-decoration: underline;
     &:hover {
         text-decoration: none;
+    }
+}
+h1 {
+    font-size: 3rem;
+    color: #010101;
+    text-transform: uppercase;
+    margin: 0 0 2.2rem;
+}
+.page-content {
+    padding: 1rem 0 0;
+}
+.news-items {
+    .clearfix;
+
+}
+.news-item {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    min-height: 17.3rem;
+    position: relative;
+    padding: 0 2rem 0 18.4rem;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    box-sizing: border-box;
+    margin: 0 0 1.6rem;
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 17.2rem;
+    }
+    time {
+        display: block;
+        color: #c32322;
+        font-weight: bold;
+        margin: 0 0 .6rem;
+    }
+    &__title {
+        display: block;
+        font-weight: bold;
+        font-size: 1.6rem;
+        color: #0090dd;
+    }
+    &__text {
+        display: block;
+    }
+    &__permalink {
+        display: block;
+        text-decoration: underline;
+        color: #0090dd;
+        font-size: 1.3rem;
+    }
+    &:hover {
+        .news-item__permalink {
+            text-decoration: none;
+        }
     }
 }
 
